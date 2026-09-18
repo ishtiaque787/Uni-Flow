@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>(function(){try{var t=localStorage.getItem("uniflow-theme");if(!t){t=(window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light";}document.documentElement.setAttribute("data-theme",t);}catch(e){}})();</script>
+<title>UniFlow — Profile</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="frame">
+  <header class="sub-header">
+    <a href="more.html" class="icon-btn" style="text-decoration:none;"><i data-lucide="chevron-left" style="width:18px;height:18px;"></i></a>
+    <div class="flex-1 min-w-0"><h1 class="truncate">Profile</h1></div>
+  </header>
+
+  <main class="sub-main fade-up">
+    <div class="flex flex-col gap-6">
+
+      <div class="flex flex-col items-center gap-3" style="padding-top:0.5rem;">
+        <div class="relative">
+          <div class="absolute glow-warm" style="inset:0; transform:scale(1.5); border-radius:999px;"></div>
+          <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?w=200&h=200&fit=crop&auto=format" alt="Ishtiaque Ahmed" class="relative" style="width:96px; height:96px; border-radius:999px; object-fit:cover; background:var(--surface-2); box-shadow: 0 0 0 4px #fff, 0 8px 24px -8px rgba(255,122,26,0.5);">
+        </div>
+        <div class="text-center">
+          <h2 style="font-size:1.35rem; font-weight:700; letter-spacing:-0.025em;">Ishtiaque Ahmed</h2>
+          <p class="text-muted mt-0-5" style="font-size:0.85rem;">SWE · 3rd Year</p>
+        </div>
+      </div>
+
+      <div class="card grid grid-3" style="overflow:hidden;">
+        <div class="stat-block border-r" style="font-size:1.4rem;"><span class="stat-value" style="font-size:1.4rem;">3.72</span><span class="stat-label">CGPA</span></div>
+        <div class="stat-block border-r"><span class="stat-value" style="font-size:1.4rem;">15</span><span class="stat-label">Credits</span></div>
+        <div class="stat-block"><span class="stat-value" style="font-size:1.4rem;">6th</span><span class="stat-label">Semester</span></div>
+      </div>
+
+      <div class="card" style="overflow:hidden;">
+        <button class="row-link flex items-center gap-3 border-b" style="width:100%; background:none; border-top:none;padding:1rem 1.25rem;">
+          <div class="row-icon"><i data-lucide="user" style="width:16px;height:16px;"></i></div>
+          <span class="row-name text-left">Personal Information</span>
+          <i data-lucide="chevron-right" class="text-muted flex-shrink-0" style="width:15px;height:15px;"></i>
+        </button>
+        <button class="row-link flex items-center gap-3 border-b" style="width:100%; background:none; padding:1rem 1.25rem;">
+          <div class="row-icon"><i data-lucide="book-open" style="width:16px;height:16px;"></i></div>
+          <span class="row-name text-left">Academic Information</span>
+          <i data-lucide="chevron-right" class="text-muted flex-shrink-0" style="width:15px;height:15px;"></i>
+        </button>
+        <button class="row-link flex items-center gap-3 border-b" style="width:100%; background:none; padding:1rem 1.25rem;">
+          <div class="row-icon"><i data-lucide="bookmark" style="width:16px;height:16px;"></i></div>
+          <span class="row-name text-left">Saved Items</span>
+          <i data-lucide="chevron-right" class="text-muted flex-shrink-0" style="width:15px;height:15px;"></i>
+        </button>
+        <a href="settings.html" class="row-link flex items-center gap-3 border-b" style="text-decoration:none; padding:1rem 1.25rem;">
+          <div class="row-icon"><i data-lucide="settings" style="width:16px;height:16px;"></i></div>
+          <span class="row-name">Settings</span>
+          <i data-lucide="chevron-right" class="text-muted flex-shrink-0" style="width:15px;height:15px;"></i>
+        </a>
+        <button class="row-link flex items-center gap-3" style="width:100%; background:none; padding:1rem 1.25rem;">
+          <div class="row-icon"><i data-lucide="life-buoy" style="width:16px;height:16px;"></i></div>
+          <span class="row-name text-left">Help &amp; Support</span>
+          <i data-lucide="chevron-right" class="text-muted flex-shrink-0" style="width:15px;height:15px;"></i>
+        </button>
+      </div>
+
+      <a href="login.html" class="btn-danger-outline" style="text-decoration:none;">
+        <i data-lucide="log-out" style="width:16px;height:16px;"></i>
+        Log Out
+      </a>
+    </div>
+  </main>
+</div>
+
+<script src="https://unpkg.com/lucide@latest"></script>
+<script src="script.js"></script>
+</body>
+</html>

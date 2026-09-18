@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>(function(){try{var t=localStorage.getItem("uniflow-theme");if(!t){t=(window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light";}document.documentElement.setAttribute("data-theme",t);}catch(e){}})();</script>
+<title>UniFlow — Campus Events</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="frame">
+  <header class="sub-header">
+    <a href="more.html" class="icon-btn" style="text-decoration:none;"><i data-lucide="chevron-left" style="width:18px;height:18px;"></i></a>
+    <div class="flex-1 min-w-0"><h1 class="truncate">Campus Events</h1></div>
+  </header>
+
+  <main class="sub-main fade-up">
+    <div class="flex flex-col gap-5">
+      <div class="card seg-tabs" data-tabs="events">
+        <button class="seg-tab active" data-tab>Upcoming</button>
+        <button class="seg-tab" data-tab>Past</button>
+      </div>
+
+      <div data-tabpanel="events" class="flex flex-col gap-3-5">
+        <div class="card" style="overflow:hidden;">
+          <div class="relative flex items-end" style="height:96px; padding:1rem; background:linear-gradient(135deg, #FFB061 0%, #FF7A1A 55%, #E8590C 100%);">
+            <span class="absolute flex items-center justify-center" style="top:12px; right:12px; width:36px; height:36px; border-radius:12px; background:rgba(255,255,255,0.25); backdrop-filter:blur(4px);"><i data-lucide="calendar-days" style="width:17px;height:17px; color:#fff;"></i></span>
+            <h3 class="text-white relative" style="font-size:1.15rem; font-weight:700; letter-spacing:-0.02em;">Tech Fest</h3>
+          </div>
+          <div class="flex items-center justify-between" style="padding:1rem;">
+            <div class="min-w-0">
+              <p class="font-mono text-foreground" style="font-size:0.7rem; letter-spacing:0.04em;">12 Sep · 10:00 AM</p>
+              <div class="flex items-center gap-1-5 text-muted mt-1-5"><i data-lucide="map-pin" style="width:12px;height:12px;"></i><span style="font-size:0.75rem;">Campus Ground</span></div>
+            </div>
+            <button class="btn flex-shrink-0" style="background:var(--ink); color:var(--ink-foreground); padding:0.5rem 1rem; border-radius:0.75rem; font-size:0.8rem; font-weight:600;">Register</button>
+          </div>
+        </div>
+
+        <div class="card" style="overflow:hidden;">
+          <div class="relative flex items-end" style="height:96px; padding:1rem; background:linear-gradient(135deg, #FFB061 0%, #FF7A1A 55%, #E8590C 100%);">
+            <span class="absolute flex items-center justify-center" style="top:12px; right:12px; width:36px; height:36px; border-radius:12px; background:rgba(255,255,255,0.25); backdrop-filter:blur(4px);"><i data-lucide="calendar-days" style="width:17px;height:17px; color:#fff;"></i></span>
+            <h3 class="text-white relative" style="font-size:1.15rem; font-weight:700; letter-spacing:-0.02em;">Programming Contest</h3>
+          </div>
+          <div class="flex items-center justify-between" style="padding:1rem;">
+            <div class="min-w-0">
+              <p class="font-mono text-foreground" style="font-size:0.7rem; letter-spacing:0.04em;">18 Sep · 09:00 AM</p>
+              <div class="flex items-center gap-1-5 text-muted mt-1-5"><i data-lucide="map-pin" style="width:12px;height:12px;"></i><span style="font-size:0.75rem;">CS Building</span></div>
+            </div>
+            <button class="btn flex-shrink-0" style="background:var(--ink); color:var(--ink-foreground); padding:0.5rem 1rem; border-radius:0.75rem; font-size:0.8rem; font-weight:600;">Register</button>
+          </div>
+        </div>
+
+        <div class="card" style="overflow:hidden;">
+          <div class="relative flex items-end" style="height:96px; padding:1rem; background:linear-gradient(135deg, #FFB061 0%, #FF7A1A 55%, #E8590C 100%);">
+            <span class="absolute flex items-center justify-center" style="top:12px; right:12px; width:36px; height:36px; border-radius:12px; background:rgba(255,255,255,0.25); backdrop-filter:blur(4px);"><i data-lucide="calendar-days" style="width:17px;height:17px; color:#fff;"></i></span>
+            <h3 class="text-white relative" style="font-size:1.15rem; font-weight:700; letter-spacing:-0.02em;">Cultural Night</h3>
+          </div>
+          <div class="flex items-center justify-between" style="padding:1rem;">
+            <div class="min-w-0">
+              <p class="font-mono text-foreground" style="font-size:0.7rem; letter-spacing:0.04em;">30 Sep · 06:00 PM</p>
+              <div class="flex items-center gap-1-5 text-muted mt-1-5"><i data-lucide="map-pin" style="width:12px;height:12px;"></i><span style="font-size:0.75rem;">Main Auditorium</span></div>
+            </div>
+            <button class="btn flex-shrink-0" style="background:var(--ink); color:var(--ink-foreground); padding:0.5rem 1rem; border-radius:0.75rem; font-size:0.8rem; font-weight:600;">Register</button>
+          </div>
+        </div>
+      </div>
+
+      <div data-tabpanel="events" style="display:none;" class="flex flex-col gap-3-5">
+        <div class="card" style="overflow:hidden;">
+          <div class="relative flex items-end" style="height:96px; padding:1rem; background:linear-gradient(135deg, #FFB061 0%, #FF7A1A 55%, #E8590C 100%);">
+            <span class="absolute flex items-center justify-center" style="top:12px; right:12px; width:36px; height:36px; border-radius:12px; background:rgba(255,255,255,0.25); backdrop-filter:blur(4px);"><i data-lucide="calendar-days" style="width:17px;height:17px; color:#fff;"></i></span>
+            <h3 class="text-white relative" style="font-size:1.15rem; font-weight:700; letter-spacing:-0.02em;">Orientation Day</h3>
+          </div>
+          <div class="flex items-center justify-between" style="padding:1rem;">
+            <div class="min-w-0">
+              <p class="font-mono text-foreground" style="font-size:0.7rem; letter-spacing:0.04em;">20 Aug · 09:00 AM</p>
+              <div class="flex items-center gap-1-5 text-muted mt-1-5"><i data-lucide="map-pin" style="width:12px;height:12px;"></i><span style="font-size:0.75rem;">Main Auditorium</span></div>
+            </div>
+            <span class="font-mono text-muted flex-shrink-0" style="font-size:0.62rem; letter-spacing:0.1em;">ENDED</span>
+          </div>
+        </div>
+
+        <div class="card" style="overflow:hidden;">
+          <div class="relative flex items-end" style="height:96px; padding:1rem; background:linear-gradient(135deg, #FFB061 0%, #FF7A1A 55%, #E8590C 100%);">
+            <span class="absolute flex items-center justify-center" style="top:12px; right:12px; width:36px; height:36px; border-radius:12px; background:rgba(255,255,255,0.25); backdrop-filter:blur(4px);"><i data-lucide="calendar-days" style="width:17px;height:17px; color:#fff;"></i></span>
+            <h3 class="text-white relative" style="font-size:1.15rem; font-weight:700; letter-spacing:-0.02em;">Career Fair</h3>
+          </div>
+          <div class="flex items-center justify-between" style="padding:1rem;">
+            <div class="min-w-0">
+              <p class="font-mono text-foreground" style="font-size:0.7rem; letter-spacing:0.04em;">05 Aug · 11:00 AM</p>
+              <div class="flex items-center gap-1-5 text-muted mt-1-5"><i data-lucide="map-pin" style="width:12px;height:12px;"></i><span style="font-size:0.75rem;">Campus Ground</span></div>
+            </div>
+            <span class="font-mono text-muted flex-shrink-0" style="font-size:0.62rem; letter-spacing:0.1em;">ENDED</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script src="https://unpkg.com/lucide@latest"></script>
+<script src="script.js"></script>
+</body>
+</html>

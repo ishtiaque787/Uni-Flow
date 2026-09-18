@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>(function(){try{var t=localStorage.getItem("uniflow-theme");if(!t){t=(window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light";}document.documentElement.setAttribute("data-theme",t);}catch(e){}})();</script>
+<title>UniFlow — Create Account</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="frame">
+  <header class="flex items-center gap-3 px-5" style="padding-top:3rem; padding-bottom:0.5rem; flex-shrink:0;">
+    <a href="login.html" class="icon-btn" style="text-decoration:none;"><i data-lucide="chevron-left" style="width:18px;height:18px;"></i></a>
+  </header>
+
+  <div class="main-scroll flex flex-col justify-center gap-7 fade-up" style="padding:0 1.75rem 2.5rem;">
+    <div>
+      <h1 style="font-size:1.9rem; font-weight:700; letter-spacing:-0.035em; line-height:1.1;">Create Account</h1>
+      <p class="text-muted mt-2" style="font-size:0.95rem;">Join UniFlow today.</p>
+    </div>
+
+    <div class="flex flex-col gap-3-5">
+      <label class="field">
+        <span class="field-label">Full Name</span>
+        <div class="field-box"><i data-lucide="user"></i><input type="text" placeholder="Your full name"></div>
+      </label>
+      <label class="field">
+        <span class="field-label">Student ID</span>
+        <div class="field-box"><i data-lucide="id-card"></i><input type="text" placeholder="191-xxxx"></div>
+      </label>
+      <label class="field">
+        <span class="field-label">University Email</span>
+        <div class="field-box"><i data-lucide="mail"></i><input type="email" placeholder="you@university.edu"></div>
+      </label>
+      <label class="field">
+        <span class="field-label">Password</span>
+        <div class="field-box"><i data-lucide="lock"></i><input type="password" placeholder="••••••••"></div>
+      </label>
+    </div>
+
+    <div class="flex flex-col gap-4">
+      <a href="home.html" class="btn btn-ink" style="text-decoration:none;">Create Account</a>
+      <p class="text-center text-muted" style="font-size:0.85rem;">
+        Already have an account? <a href="login.html" class="text-primary" style="font-weight:600;">Log in</a>
+      </p>
+    </div>
+  </div>
+</div>
+
+<script src="https://unpkg.com/lucide@latest"></script>
+<script src="script.js"></script>
+</body>
+</html>

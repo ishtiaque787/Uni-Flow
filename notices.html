@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>(function(){try{var t=localStorage.getItem("uniflow-theme");if(!t){t=(window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light";}document.documentElement.setAttribute("data-theme",t);}catch(e){}})();</script>
+<title>UniFlow — Notices</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="frame">
+  <header class="sub-header">
+    <a href="more.html" class="icon-btn" style="text-decoration:none;"><i data-lucide="chevron-left" style="width:18px;height:18px;"></i></a>
+    <div class="flex-1 min-w-0"><h1 class="truncate">Notices</h1></div>
+  </header>
+
+  <main class="sub-main fade-up">
+    <div class="flex flex-col gap-5">
+      <div class="flex gap-2 overflow-x-auto" data-filter-group="#noticesList">
+        <button class="chip active" data-filter="All">All</button>
+        <button class="chip" data-filter="Academic">Academic</button>
+        <button class="chip" data-filter="Exams">Exams</button>
+        <button class="chip" data-filter="Fees">Fees</button>
+      </div>
+
+      <div class="flex flex-col gap-3" id="noticesList">
+        <button class="card card-link flex items-center gap-3-5" data-filter-tag="Academic" style="padding:1rem; text-align:left;">
+          <div class="row-icon" style="width:44px;height:44px;border-radius:12px;"><i data-lucide="megaphone" style="width:17px;height:17px;"></i></div>
+          <div class="flex-1 min-w-0"><p class="truncate" style="font-size:0.9rem; font-weight:600;">Midterm schedule published</p><p class="font-mono text-muted mt-1" style="font-size:0.6rem; letter-spacing:0.08em;">ACADEMIC · TODAY</p></div>
+          <i data-lucide="chevron-right" class="text-muted flex-shrink-0" style="width:15px;height:15px;"></i>
+        </button>
+        <button class="card card-link flex items-center gap-3-5" data-filter-tag="All" style="padding:1rem; text-align:left;">
+          <div class="row-icon" style="width:44px;height:44px;border-radius:12px;"><i data-lucide="megaphone" style="width:17px;height:17px;"></i></div>
+          <div class="flex-1 min-w-0"><p class="truncate" style="font-size:0.9rem; font-weight:600;">Holiday notice</p><p class="font-mono text-muted mt-1" style="font-size:0.6rem; letter-spacing:0.08em;">GENERAL · YESTERDAY</p></div>
+          <i data-lucide="chevron-right" class="text-muted flex-shrink-0" style="width:15px;height:15px;"></i>
+        </button>
+        <button class="card card-link flex items-center gap-3-5" data-filter-tag="Fees" style="padding:1rem; text-align:left;">
+          <div class="row-icon" style="width:44px;height:44px;border-radius:12px;"><i data-lucide="megaphone" style="width:17px;height:17px;"></i></div>
+          <div class="flex-1 min-w-0"><p class="truncate" style="font-size:0.9rem; font-weight:600;">Tuition deadline</p><p class="font-mono text-muted mt-1" style="font-size:0.6rem; letter-spacing:0.08em;">FINANCE · SEP 2</p></div>
+          <i data-lucide="chevron-right" class="text-muted flex-shrink-0" style="width:15px;height:15px;"></i>
+        </button>
+        <button class="card card-link flex items-center gap-3-5" data-filter-tag="Academic" style="padding:1rem; text-align:left;">
+          <div class="row-icon" style="width:44px;height:44px;border-radius:12px;"><i data-lucide="megaphone" style="width:17px;height:17px;"></i></div>
+          <div class="flex-1 min-w-0"><p class="truncate" style="font-size:0.9rem; font-weight:600;">Scholarship opportunity</p><p class="font-mono text-muted mt-1" style="font-size:0.6rem; letter-spacing:0.08em;">ACADEMIC · AUG 28</p></div>
+          <i data-lucide="chevron-right" class="text-muted flex-shrink-0" style="width:15px;height:15px;"></i>
+        </button>
+        <button class="card card-link flex items-center gap-3-5" data-filter-tag="Exams" style="padding:1rem; text-align:left;">
+          <div class="row-icon" style="width:44px;height:44px;border-radius:12px;"><i data-lucide="megaphone" style="width:17px;height:17px;"></i></div>
+          <div class="flex-1 min-w-0"><p class="truncate" style="font-size:0.9rem; font-weight:600;">Exam hall allocation</p><p class="font-mono text-muted mt-1" style="font-size:0.6rem; letter-spacing:0.08em;">EXAMS · AUG 25</p></div>
+          <i data-lucide="chevron-right" class="text-muted flex-shrink-0" style="width:15px;height:15px;"></i>
+        </button>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script src="https://unpkg.com/lucide@latest"></script>
+<script src="script.js"></script>
+</body>
+</html>

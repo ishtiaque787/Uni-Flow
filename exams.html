@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>(function(){try{var t=localStorage.getItem("uniflow-theme");if(!t){t=(window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light";}document.documentElement.setAttribute("data-theme",t);}catch(e){}})();</script>
+<title>UniFlow — Exams</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="frame">
+  <header class="sub-header">
+    <a href="more.html" class="icon-btn" style="text-decoration:none;"><i data-lucide="chevron-left" style="width:18px;height:18px;"></i></a>
+    <div class="flex-1 min-w-0"><h1 class="truncate">Exams</h1></div>
+  </header>
+
+  <main class="sub-main fade-up">
+    <div class="flex flex-col gap-5">
+      <div class="card seg-tabs" data-tabs="exam">
+        <button class="seg-tab active" data-tab>Upcoming</button>
+        <button class="seg-tab" data-tab>Past</button>
+      </div>
+
+      <div data-tabpanel="exam" class="flex flex-col gap-3">
+        <a href="exam-details.html" class="card card-link flex items-center gap-4" style="padding:1rem; text-decoration:none;">
+          <div class="flex flex-col items-center justify-center flex-shrink-0" style="width:56px;height:56px;border-radius:16px; background:var(--primary-subtle);">
+            <span class="text-primary-strong" style="font-size:1.25rem; font-weight:700; letter-spacing:-0.03em; line-height:1;">20</span>
+            <span class="font-mono text-primary-strong" style="font-size:0.5rem; letter-spacing:0.12em; opacity:.7;">SEP</span>
+          </div>
+          <div class="flex-1 min-w-0"><p class="truncate" style="font-size:0.9rem; font-weight:600;">Database Systems</p><p class="font-mono text-muted mt-1" style="font-size:0.65rem; letter-spacing:0.04em;">09:00 AM · Room 301</p></div>
+          <i data-lucide="chevron-right" class="text-muted flex-shrink-0" style="width:16px;height:16px;"></i>
+        </a>
+        <a href="exam-details.html" class="card card-link flex items-center gap-4" style="padding:1rem; text-decoration:none;">
+          <div class="flex flex-col items-center justify-center flex-shrink-0" style="width:56px;height:56px;border-radius:16px; background:var(--primary-subtle);">
+            <span class="text-primary-strong" style="font-size:1.25rem; font-weight:700; letter-spacing:-0.03em; line-height:1;">22</span>
+            <span class="font-mono text-primary-strong" style="font-size:0.5rem; letter-spacing:0.12em; opacity:.7;">SEP</span>
+          </div>
+          <div class="flex-1 min-w-0"><p class="truncate" style="font-size:0.9rem; font-weight:600;">Software Engineering</p><p class="font-mono text-muted mt-1" style="font-size:0.65rem; letter-spacing:0.04em;">11:00 AM · Room 204</p></div>
+          <i data-lucide="chevron-right" class="text-muted flex-shrink-0" style="width:16px;height:16px;"></i>
+        </a>
+        <a href="exam-details.html" class="card card-link flex items-center gap-4" style="padding:1rem; text-decoration:none;">
+          <div class="flex flex-col items-center justify-center flex-shrink-0" style="width:56px;height:56px;border-radius:16px; background:var(--primary-subtle);">
+            <span class="text-primary-strong" style="font-size:1.25rem; font-weight:700; letter-spacing:-0.03em; line-height:1;">28</span>
+            <span class="font-mono text-primary-strong" style="font-size:0.5rem; letter-spacing:0.12em; opacity:.7;">SEP</span>
+          </div>
+          <div class="flex-1 min-w-0"><p class="truncate" style="font-size:0.9rem; font-weight:600;">Mathematics</p><p class="font-mono text-muted mt-1" style="font-size:0.65rem; letter-spacing:0.04em;">09:00 AM · Room 402</p></div>
+          <i data-lucide="chevron-right" class="text-muted flex-shrink-0" style="width:16px;height:16px;"></i>
+        </a>
+      </div>
+
+      <div data-tabpanel="exam" style="display:none;" class="flex flex-col gap-3">
+        <a href="exam-details.html" class="card card-link flex items-center gap-4" style="padding:1rem; text-decoration:none;">
+          <div class="flex flex-col items-center justify-center flex-shrink-0" style="width:56px;height:56px;border-radius:16px; background:var(--primary-subtle);">
+            <span class="text-primary-strong" style="font-size:1.25rem; font-weight:700; letter-spacing:-0.03em; line-height:1;">12</span>
+            <span class="font-mono text-primary-strong" style="font-size:0.5rem; letter-spacing:0.12em; opacity:.7;">AUG</span>
+          </div>
+          <div class="flex-1 min-w-0"><p class="truncate" style="font-size:0.9rem; font-weight:600;">Computer Networks</p><p class="font-mono text-muted mt-1" style="font-size:0.65rem; letter-spacing:0.04em;">Scored A− · Room 105</p></div>
+          <i data-lucide="chevron-right" class="text-muted flex-shrink-0" style="width:16px;height:16px;"></i>
+        </a>
+        <a href="exam-details.html" class="card card-link flex items-center gap-4" style="padding:1rem; text-decoration:none;">
+          <div class="flex flex-col items-center justify-center flex-shrink-0" style="width:56px;height:56px;border-radius:16px; background:var(--primary-subtle);">
+            <span class="text-primary-strong" style="font-size:1.25rem; font-weight:700; letter-spacing:-0.03em; line-height:1;">08</span>
+            <span class="font-mono text-primary-strong" style="font-size:0.5rem; letter-spacing:0.12em; opacity:.7;">AUG</span>
+          </div>
+          <div class="flex-1 min-w-0"><p class="truncate" style="font-size:0.9rem; font-weight:600;">Operating Systems</p><p class="font-mono text-muted mt-1" style="font-size:0.65rem; letter-spacing:0.04em;">Scored A · Room 301</p></div>
+          <i data-lucide="chevron-right" class="text-muted flex-shrink-0" style="width:16px;height:16px;"></i>
+        </a>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script src="https://unpkg.com/lucide@latest"></script>
+<script src="script.js"></script>
+</body>
+</html>

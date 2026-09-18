@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>(function(){try{var t=localStorage.getItem("uniflow-theme");if(!t){t=(window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light";}document.documentElement.setAttribute("data-theme",t);}catch(e){}})();</script>
+<title>UniFlow — Onboarding</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="frame">
+
+  <div class="flex justify-end px-7" style="padding-top:3rem;">
+    <a href="login.html" class="text-muted" style="font-size:0.9rem; font-weight:500;">Skip</a>
+  </div>
+
+  <div class="flex-1 flex items-center justify-center px-7" style="min-height:0;">
+    <!-- Step 1 visual -->
+    <div class="onb-visual" data-step="0">
+      <div class="relative flex items-center justify-center" style="width:132px; height:132px;">
+        <div class="absolute glow-warm" style="width:211px; height:211px; opacity:.6;"></div>
+        <div class="orb-glass relative" style="width:132px; height:132px; border-radius:50%;">
+          <span class="absolute" style="top:14%; left:20%; width:34%; height:26%; border-radius:50%; background: radial-gradient(circle, rgba(255,255,255,0.95) 0%, transparent 70%);"></span>
+          <span class="absolute" style="bottom:22%; right:24%; width:26%; height:26%; border-radius:50%; background: radial-gradient(circle, rgba(255,122,26,0.55) 0%, transparent 72%); filter: blur(3px);"></span>
+        </div>
+      </div>
+    </div>
+    <!-- Step 2 visual -->
+    <div class="onb-visual" data-step="1" style="display:none;">
+      <div class="relative flex items-center justify-center" style="width:148px; height:148px;">
+        <div class="absolute glow-warm" style="width:222px; height:222px; opacity:.5;"></div>
+        <div class="orb-glass relative flex flex-col justify-center gap-3" style="width:148px; height:115px; border-radius:22px; padding:0 1.25rem;">
+          <div class="flex items-center gap-2-5"><span style="width:12px;height:12px;border-radius:999px;border:1.5px solid rgba(155,148,135,0.5); flex-shrink:0;"></span><span style="height:6px; width:100%; border-radius:999px; background:rgba(120,108,92,0.28);"></span></div>
+          <div class="flex items-center gap-2-5"><span style="width:12px;height:12px;border-radius:999px;border:1.5px solid rgba(155,148,135,0.5); flex-shrink:0;"></span><span style="height:6px; width:74%; border-radius:999px; background:rgba(120,108,92,0.28);"></span></div>
+          <div class="flex items-center gap-2-5"><span class="icon-chip" style="width:12px;height:12px;border-radius:999px; flex-shrink:0;"></span><span style="height:6px; width:88%; border-radius:999px; background:rgba(120,108,92,0.28);"></span></div>
+          <div class="icon-chip flex items-center justify-center" style="position:absolute; bottom:-12px; right:-12px; width:34px; height:34px; border-radius:12px;">
+            <i data-lucide="list-checks" style="width:20px;height:20px;color:#fff;"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Step 3 visual -->
+    <div class="onb-visual" data-step="2" style="display:none;">
+      <div class="relative flex items-center justify-center" style="width:128px; height:128px;">
+        <div class="absolute glow-warm" style="width:205px; height:205px; opacity:.55;"></div>
+        <div class="orb-glass relative flex items-center justify-center" style="width:128px; height:128px; border-radius:50%;">
+          <span class="absolute" style="top:16%; left:22%; width:30%; height:22%; border-radius:50%; background: radial-gradient(circle, rgba(255,255,255,0.9) 0%, transparent 70%);"></span>
+          <i data-lucide="bell" style="width:51px; height:51px; color:var(--primary-strong);"></i>
+          <span class="icon-chip absolute" style="top:26%; right:28%; width:10px; height:10px; border-radius:999px;"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="px-7">
+    <div class="onb-copy" data-step="0">
+      <span class="font-mono text-primary" style="font-size:0.62rem; letter-spacing:0.2em; font-weight:500;">01 / 03 · ORGANIZE</span>
+      <h2 class="text-foreground mt-3 mb-3" style="font-size:1.9rem; font-weight:700; letter-spacing:-0.035em; line-height:1.12;">Everything you need,<br>in one place.</h2>
+      <p class="text-muted leading-relaxed" style="font-size:0.95rem;">Classes, assignments, attendance, exams and academic updates — beautifully organized.</p>
+    </div>
+    <div class="onb-copy" data-step="1" style="display:none;">
+      <span class="font-mono text-primary" style="font-size:0.62rem; letter-spacing:0.2em; font-weight:500;">02 / 03 · TRACK</span>
+      <h2 class="text-foreground mt-3 mb-3" style="font-size:1.9rem; font-weight:700; letter-spacing:-0.035em; line-height:1.12;">Stay on Track.</h2>
+      <p class="text-muted leading-relaxed" style="font-size:0.95rem;">Keep up with your classes, tasks and deadlines, all in one place.</p>
+    </div>
+    <div class="onb-copy" data-step="2" style="display:none;">
+      <span class="font-mono text-primary" style="font-size:0.62rem; letter-spacing:0.2em; font-weight:500;">03 / 03 · FOCUS</span>
+      <h2 class="text-foreground mt-3 mb-3" style="font-size:1.9rem; font-weight:700; letter-spacing:-0.035em; line-height:1.12;">Never Miss.</h2>
+      <p class="text-muted leading-relaxed" style="font-size:0.95rem;">Get important updates, notices and events, instantly.</p>
+    </div>
+  </div>
+
+  <div class="px-7 flex flex-col gap-6" style="padding-bottom:3rem; padding-top:2rem;">
+    <div class="onb-dots">
+      <span class="onb-dot active" data-dot="0"></span>
+      <span class="onb-dot" data-dot="1"></span>
+      <span class="onb-dot" data-dot="2"></span>
+    </div>
+    <button id="onbNext" class="btn" style="width:100%; display:flex; align-items:center; justify-content:center; gap:0.5rem; background:var(--ink); color:var(--ink-foreground); font-weight:500; padding:1rem; border-radius:1rem; font-size:0.95rem; letter-spacing:-0.01em;">
+      <span id="onbCta">Get Started</span>
+      <i data-lucide="arrow-right" style="width:17px; height:17px;"></i>
+    </button>
+  </div>
+</div>
+
+<script src="https://unpkg.com/lucide@latest"></script>
+<script src="script.js"></script>
+<script>
+  const CTAS = ["Get Started", "Next", "Get Started"];
+  let step = 0;
+  const total = 3;
+  function render() {
+    document.querySelectorAll('.onb-visual').forEach(el => el.style.display = el.dataset.step == step ? '' : 'none');
+    document.querySelectorAll('.onb-copy').forEach(el => el.style.display = el.dataset.step == step ? '' : 'none');
+    document.querySelectorAll('.onb-dot').forEach(el => el.classList.toggle('active', el.dataset.dot == step));
+    document.getElementById('onbCta').textContent = CTAS[step];
+  }
+  document.getElementById('onbNext').addEventListener('click', () => {
+    if (step < total - 1) { step++; render(); }
+    else { window.location.href = 'login.html'; }
+  });
+  render();
+</script>
+</body>
+</html>

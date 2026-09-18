@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>(function(){try{var t=localStorage.getItem("uniflow-theme");if(!t){t=(window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light";}document.documentElement.setAttribute("data-theme",t);}catch(e){}})();</script>
+<title>UniFlow — Materials</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="frame">
+  <header class="sub-header">
+    <a href="course-details.html" class="icon-btn" style="text-decoration:none;"><i data-lucide="chevron-left" style="width:18px;height:18px;"></i></a>
+    <div class="flex-1 min-w-0">
+      <h1 class="truncate">Materials</h1>
+      <p class="subtitle truncate">Database Systems</p>
+    </div>
+  </header>
+
+  <main class="sub-main fade-up">
+    <div class="flex flex-col gap-5">
+      <div class="search-box">
+        <i data-lucide="search"></i>
+        <input type="text" data-search="#materialsList" placeholder="Search materials…">
+      </div>
+
+      <div class="flex gap-2" data-filter-group="#materialsList">
+        <button class="chip active" data-filter="All">All</button>
+        <button class="chip" data-filter="PDF">PDF</button>
+        <button class="chip" data-filter="Videos">Videos</button>
+        <button class="chip" data-filter="Links">Links</button>
+      </div>
+
+      <div class="card" id="materialsList" style="overflow:hidden;">
+        <div class="flex items-center gap-3 border-b" data-search-text="Lecture 01 — Introduction" data-filter-tag="PDF" style="padding:1rem;">
+          <div class="row-icon" style="width:40px;height:40px;"><i data-lucide="file-text" style="width:16px;height:16px;"></i></div>
+          <div class="flex-1 min-w-0"><p class="truncate" style="font-size:0.875rem; font-weight:500;">Lecture 01 — Introduction</p><p class="font-mono text-muted mt-0-5" style="font-size:0.6rem; letter-spacing:0.06em;">PDF · 2.4 MB</p></div>
+          <button class="icon-btn" style="border:none; background:none;"><i data-lucide="download" class="text-muted" style="width:15px;height:15px;"></i></button>
+        </div>
+        <div class="flex items-center gap-3 border-b" data-search-text="Lecture 02 — ER Model" data-filter-tag="PDF" style="padding:1rem;">
+          <div class="row-icon" style="width:40px;height:40px;"><i data-lucide="file-text" style="width:16px;height:16px;"></i></div>
+          <div class="flex-1 min-w-0"><p class="truncate" style="font-size:0.875rem; font-weight:500;">Lecture 02 — ER Model</p><p class="font-mono text-muted mt-0-5" style="font-size:0.6rem; letter-spacing:0.06em;">PDF · 1.6 MB</p></div>
+          <button class="icon-btn" style="border:none; background:none;"><i data-lucide="download" class="text-muted" style="width:15px;height:15px;"></i></button>
+        </div>
+        <div class="flex items-center gap-3 border-b" data-search-text="Lecture 03 — Normalization" data-filter-tag="PDF" style="padding:1rem;">
+          <div class="row-icon" style="width:40px;height:40px;"><i data-lucide="file-text" style="width:16px;height:16px;"></i></div>
+          <div class="flex-1 min-w-0"><p class="truncate" style="font-size:0.875rem; font-weight:500;">Lecture 03 — Normalization</p><p class="font-mono text-muted mt-0-5" style="font-size:0.6rem; letter-spacing:0.06em;">PDF · 2.1 MB</p></div>
+          <button class="icon-btn" style="border:none; background:none;"><i data-lucide="download" class="text-muted" style="width:15px;height:15px;"></i></button>
+        </div>
+        <div class="flex items-center gap-3 border-b" data-search-text="Database Systems Video" data-filter-tag="Videos" style="padding:1rem;">
+          <div class="row-icon" style="width:40px;height:40px;"><i data-lucide="video" style="width:16px;height:16px;"></i></div>
+          <div class="flex-1 min-w-0"><p class="truncate" style="font-size:0.875rem; font-weight:500;">Database Systems Video</p><p class="font-mono text-muted mt-0-5" style="font-size:0.6rem; letter-spacing:0.06em;">Video · 42 min</p></div>
+          <button class="icon-btn" style="border:none; background:none;"><i data-lucide="download" class="text-muted" style="width:15px;height:15px;"></i></button>
+        </div>
+        <div class="flex items-center gap-3" data-search-text="Reference Links" data-filter-tag="Links" style="padding:1rem;">
+          <div class="row-icon" style="width:40px;height:40px;"><i data-lucide="link-2" style="width:16px;height:16px;"></i></div>
+          <div class="flex-1 min-w-0"><p class="truncate" style="font-size:0.875rem; font-weight:500;">Reference Links</p><p class="font-mono text-muted mt-0-5" style="font-size:0.6rem; letter-spacing:0.06em;">Link</p></div>
+          <button class="icon-btn" style="border:none; background:none;"><i data-lucide="chevron-right" class="text-muted" style="width:16px;height:16px;"></i></button>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script src="https://unpkg.com/lucide@latest"></script>
+<script src="script.js"></script>
+</body>
+</html>

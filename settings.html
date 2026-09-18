@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>(function(){try{var t=localStorage.getItem("uniflow-theme");if(!t){t=(window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light";}document.documentElement.setAttribute("data-theme",t);}catch(e){}})();</script>
+<title>UniFlow — Settings</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="frame">
+  <header class="sub-header">
+    <a href="more.html" class="icon-btn" style="text-decoration:none;"><i data-lucide="chevron-left" style="width:18px;height:18px;"></i></a>
+    <div class="flex-1 min-w-0"><h1 class="truncate">Settings</h1></div>
+  </header>
+
+  <main class="sub-main fade-up">
+    <div class="flex flex-col gap-6">
+
+      <div>
+        <p class="label">Preferences</p>
+        <div class="card" style="overflow:hidden;">
+          <div class="row border-b">
+            <div class="row-icon"><i data-lucide="bell" style="width:16px;height:16px;"></i></div>
+            <span class="row-name">Notifications</span>
+            <button class="toggle on" data-toggle><span class="knob"></span></button>
+          </div>
+          <div class="row border-b">
+            <div class="row-icon"><i data-lucide="bell" style="width:16px;height:16px;"></i></div>
+            <span class="row-name">Sound &amp; Vibration</span>
+            <button class="toggle" data-toggle><span class="knob"></span></button>
+          </div>
+          <div class="row border-b">
+            <div class="row-icon"><i data-lucide="sun" style="width:16px;height:16px;"></i></div>
+            <span class="row-name">Theme</span>
+            <div class="theme-seg">
+              <button class="theme-opt" data-theme-btn="light"><i data-lucide="sun"></i><span>Light</span></button>
+              <button class="theme-opt" data-theme-btn="dark"><i data-lucide="moon"></i><span>Dark</span></button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="row-icon"><i data-lucide="globe" style="width:16px;height:16px;"></i></div>
+            <span class="row-name">Language</span>
+            <span class="text-muted" style="font-size:0.85rem;">English</span>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <p class="label">Account</p>
+        <div class="card" style="overflow:hidden;">
+          <button class="row-link flex items-center gap-3 border-b" style="width:100%; background:none; padding:1rem 1.25rem;">
+            <div class="row-icon"><i data-lucide="shield" style="width:16px;height:16px;"></i></div>
+            <span class="row-name text-left">Privacy</span>
+            <i data-lucide="chevron-right" class="text-muted flex-shrink-0" style="width:15px;height:15px;"></i>
+          </button>
+          <button class="row-link flex items-center gap-3 border-b" style="width:100%; background:none; padding:1rem 1.25rem;">
+            <div class="row-icon"><i data-lucide="info" style="width:16px;height:16px;"></i></div>
+            <span class="row-name text-left">About UniFlow</span>
+            <i data-lucide="chevron-right" class="text-muted flex-shrink-0" style="width:15px;height:15px;"></i>
+          </button>
+          <button class="row-link flex items-center gap-3" style="width:100%; background:none; padding:1rem 1.25rem;">
+            <div class="row-icon"><i data-lucide="life-buoy" style="width:16px;height:16px;"></i></div>
+            <span class="row-name text-left">Help &amp; Support</span>
+            <i data-lucide="chevron-right" class="text-muted flex-shrink-0" style="width:15px;height:15px;"></i>
+          </button>
+        </div>
+      </div>
+
+      <a href="login.html" class="btn-danger-outline" style="text-decoration:none;">
+        <i data-lucide="log-out" style="width:16px;height:16px;"></i>
+        Log Out
+      </a>
+
+      <p class="text-center font-mono text-muted" style="font-size:0.6rem; letter-spacing:0.14em;">UNIFLOW · VERSION 1.0.0</p>
+    </div>
+  </main>
+</div>
+
+<script src="https://unpkg.com/lucide@latest"></script>
+<script src="script.js"></script>
+</body>
+</html>

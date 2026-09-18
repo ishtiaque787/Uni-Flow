@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>(function(){try{var t=localStorage.getItem("uniflow-theme");if(!t){t=(window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light";}document.documentElement.setAttribute("data-theme",t);}catch(e){}})();</script>
+<title>UniFlow — Log In</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="frame" style="padding:0 1.75rem;">
+  <div class="flex flex-col flex-1 justify-center gap-7 fade-up">
+
+    <div class="flex flex-col gap-5">
+      <div class="orb-orange relative flex items-center justify-center" style="width:56px; height:56px;">
+        <i data-lucide="sparkles" style="width:19px; height:19px; color:#fff;"></i>
+      </div>
+      <div>
+        <h1 style="font-size:1.9rem; font-weight:700; letter-spacing:-0.035em; line-height:1.1;">Welcome Back 👋</h1>
+        <p class="text-muted mt-2" style="font-size:0.95rem;">Continue your academic journey.</p>
+      </div>
+    </div>
+
+    <div class="flex flex-col gap-3-5">
+      <label class="field">
+        <span class="field-label">Student ID / Email</span>
+        <div class="field-box">
+          <i data-lucide="id-card"></i>
+          <input type="text" placeholder="191-xxxx">
+        </div>
+      </label>
+      <label class="field">
+        <span class="field-label">Password</span>
+        <div class="field-box">
+          <i data-lucide="lock"></i>
+          <input type="password" id="loginPw" placeholder="••••••••">
+          <button type="button" data-pw-toggle="loginPw"><i data-lucide="eye"></i></button>
+        </div>
+      </label>
+      <a href="#" class="text-primary" style="align-self:flex-end; font-size:0.8rem; font-weight:500;">Forgot password?</a>
+    </div>
+
+    <div class="flex flex-col gap-4">
+      <a href="home.html" class="btn btn-ink" style="text-decoration:none;">Log in</a>
+
+      <div class="flex items-center gap-3">
+        <div class="hr flex-1"></div>
+        <span class="font-mono text-muted" style="font-size:0.65rem; letter-spacing:0.1em;">OR</span>
+        <div class="hr flex-1"></div>
+      </div>
+
+      <a href="home.html" class="btn btn-outline" style="text-decoration:none;">
+        <i data-lucide="graduation-cap" style="color:var(--primary-strong); width:18px; height:18px;"></i>
+        Continue with University Account
+      </a>
+    </div>
+
+    <p class="text-center text-muted" style="font-size:0.85rem;">
+      New here? <a href="register.html" class="text-primary" style="font-weight:600;">Create an account</a>
+    </p>
+  </div>
+</div>
+
+<script src="https://unpkg.com/lucide@latest"></script>
+<script src="script.js"></script>
+</body>
+</html>

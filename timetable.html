@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>(function(){try{var t=localStorage.getItem("uniflow-theme");if(!t){t=(window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light";}document.documentElement.setAttribute("data-theme",t);}catch(e){}})();</script>
+<title>UniFlow — Timetable</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="frame">
+<main class="main-scroll">
+<div class="screen-pad">
+
+  <div class="flex items-end justify-between fade-up">
+    <div>
+      <p class="font-mono text-muted mb-1" style="font-size:0.58rem; letter-spacing:0.2em;">SCHEDULE</p>
+      <h1 class="text-foreground" style="font-size:1.5rem; font-weight:600; letter-spacing:-0.025em;">My Timetable</h1>
+    </div>
+    <button class="icon-btn"><i data-lucide="sliders-horizontal" style="width:16px;height:16px; color:var(--muted-foreground);"></i></button>
+  </div>
+
+  <div class="card day-tabs fade-up fade-up-1" data-tabs="day">
+    <button class="day-tab active" data-tab>Mon</button>
+    <button class="day-tab" data-tab>Tue</button>
+    <button class="day-tab" data-tab>Wed</button>
+    <button class="day-tab" data-tab>Thu</button>
+    <button class="day-tab" data-tab>Fri</button>
+    <button class="day-tab" data-tab>Sat</button>
+    <button class="day-tab" data-tab>Sun</button>
+  </div>
+
+  <!-- Day 0: Monday -->
+  <div data-tabpanel="day" class="flex flex-col gap-3">
+    <div class="flex gap-3 items-start">
+      <div style="width:48px; flex-shrink:0; text-align:right; padding-top:1rem;">
+        <p class="font-mono text-primary" style="font-size:0.68rem; letter-spacing:0.04em;">09:00</p>
+        <p class="font-mono text-muted" style="font-size:0.55rem; opacity:.5;">10:30</p>
+      </div>
+      <div class="flex flex-col items-center flex-shrink-0 gap-1" style="padding-top:1rem;">
+        <span class="dot"></span>
+        <div style="width:1px; background:var(--border); flex:1; min-height:44px;"></div>
+      </div>
+      <div class="card accent-left flex-1" style="padding:1rem; margin-bottom:0.75rem;">
+        <div class="flex items-start gap-3 mb-2">
+          <div class="icon-chip flex items-center justify-center flex-shrink-0" style="width:36px;height:36px;border-radius:12px;"><i data-lucide="database" style="width:16px;height:16px;color:#fff;"></i></div>
+          <div class="flex-1 min-w-0">
+            <p style="font-size:0.875rem; font-weight:600; color:var(--foreground); letter-spacing:-0.01em;">Database Systems</p>
+            <p class="text-muted mt-0-5" style="font-size:0.75rem;">Dr. Rahman</p>
+          </div>
+          <span class="font-mono text-primary flex-shrink-0" style="font-size:0.6rem; letter-spacing:0.08em;">CSE 301</span>
+        </div>
+        <div class="flex items-center gap-4">
+          <span class="flex items-center gap-1-5 text-muted"><i data-lucide="map-pin" style="width:11px;height:11px;"></i><span class="font-mono" style="font-size:0.65rem;">Room 304</span></span>
+          <span class="flex items-center gap-1-5 text-muted"><i data-lucide="clock" style="width:11px;height:11px;"></i><span class="font-mono" style="font-size:0.65rem;">1h 30m</span></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex gap-3 items-start">
+      <div style="width:48px; flex-shrink:0; text-align:right; padding-top:1rem;">
+        <p class="font-mono text-muted" style="font-size:0.68rem; letter-spacing:0.04em;">11:00</p>
+        <p class="font-mono text-muted" style="font-size:0.55rem; opacity:.5;">12:30</p>
+      </div>
+      <div class="flex flex-col items-center flex-shrink-0 gap-1" style="padding-top:1rem;">
+        <span style="width:8px;height:8px;border-radius:999px;border:1px solid var(--border); background:var(--surface);"></span>
+        <div style="width:1px; background:var(--border); flex:1; min-height:44px;"></div>
+      </div>
+      <div class="card-border flex-1" style="padding:1rem; margin-bottom:0.75rem;">
+        <div class="flex items-start gap-3 mb-2">
+          <div class="icon-chip flex items-center justify-center flex-shrink-0" style="width:36px;height:36px;border-radius:12px;"><i data-lucide="code-2" style="width:16px;height:16px;color:#fff;"></i></div>
+          <div class="flex-1 min-w-0">
+            <p style="font-size:0.875rem; font-weight:500; color:var(--foreground); letter-spacing:-0.01em;">Software Engineering</p>
+            <p class="text-muted mt-0-5" style="font-size:0.75rem;">Dr. Islam</p>
+          </div>
+          <span class="font-mono text-muted flex-shrink-0" style="font-size:0.6rem; letter-spacing:0.08em;">CSE 302</span>
+        </div>
+        <div class="flex items-center gap-4">
+          <span class="flex items-center gap-1-5 text-muted"><i data-lucide="map-pin" style="width:11px;height:11px;"></i><span class="font-mono" style="font-size:0.65rem;">Room 502</span></span>
+          <span class="flex items-center gap-1-5 text-muted"><i data-lucide="clock" style="width:11px;height:11px;"></i><span class="font-mono" style="font-size:0.65rem;">1h 30m</span></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex gap-3 items-start">
+      <div style="width:48px; flex-shrink:0; text-align:right; padding-top:1rem;">
+        <p class="font-mono text-muted" style="font-size:0.68rem; letter-spacing:0.04em;">14:00</p>
+        <p class="font-mono text-muted" style="font-size:0.55rem; opacity:.5;">16:00</p>
+      </div>
+      <div class="flex flex-col items-center flex-shrink-0 gap-1" style="padding-top:1rem;">
+        <span style="width:8px;height:8px;border-radius:999px;border:1px solid var(--border); background:var(--surface);"></span>
+      </div>
+      <div class="card-border flex-1" style="padding:1rem; margin-bottom:0.75rem;">
+        <div class="flex items-start gap-3 mb-2">
+          <div class="icon-chip flex items-center justify-center flex-shrink-0" style="width:36px;height:36px;border-radius:12px;"><i data-lucide="sigma" style="width:16px;height:16px;color:#fff;"></i></div>
+          <div class="flex-1 min-w-0">
+            <p style="font-size:0.875rem; font-weight:500; color:var(--foreground); letter-spacing:-0.01em;">Mathematics</p>
+            <p class="text-muted mt-0-5" style="font-size:0.75rem;">Prof. Ahmed</p>
+          </div>
+          <span class="font-mono text-muted flex-shrink-0" style="font-size:0.6rem; letter-spacing:0.08em;">MAT 201</span>
+        </div>
+        <div class="flex items-center gap-4">
+          <span class="flex items-center gap-1-5 text-muted"><i data-lucide="map-pin" style="width:11px;height:11px;"></i><span class="font-mono" style="font-size:0.65rem;">Room 201</span></span>
+          <span class="flex items-center gap-1-5 text-muted"><i data-lucide="clock" style="width:11px;height:11px;"></i><span class="font-mono" style="font-size:0.65rem;">2h</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Other days: simple empty-state (demo data only covers Monday) -->
+  <div data-tabpanel="day" style="display:none;" class="card flex flex-col items-center gap-2" style="padding:3rem 1rem;">
+    <p class="text-muted" style="font-size:0.875rem;">No classes scheduled</p>
+  </div>
+  <div data-tabpanel="day" style="display:none;" class="card flex flex-col items-center gap-2" style="padding:3rem 1rem;">
+    <p class="text-muted" style="font-size:0.875rem;">No classes scheduled</p>
+  </div>
+  <div data-tabpanel="day" style="display:none;" class="card flex flex-col items-center gap-2" style="padding:3rem 1rem;">
+    <p class="text-muted" style="font-size:0.875rem;">No classes scheduled</p>
+  </div>
+  <div data-tabpanel="day" style="display:none;" class="card flex flex-col items-center gap-2" style="padding:3rem 1rem;">
+    <p class="text-muted" style="font-size:0.875rem;">No classes scheduled</p>
+  </div>
+  <div data-tabpanel="day" style="display:none;" class="card flex flex-col items-center gap-2" style="padding:3rem 1rem;">
+    <p class="text-muted" style="font-size:0.875rem;">No classes scheduled</p>
+  </div>
+  <div data-tabpanel="day" style="display:none;" class="card flex flex-col items-center gap-2" style="padding:3rem 1rem;">
+    <p class="text-muted" style="font-size:0.875rem;">No classes scheduled</p>
+  </div>
+
+</div>
+</main>
+
+<div class="bottom-nav-wrap">
+  <nav class="card bottom-nav">
+    <a href="home.html" class="nav-item"><i data-lucide="home"></i><span>HOME</span></a>
+    <a href="timetable.html" class="nav-item active"><i data-lucide="calendar-days"></i><span>CLASSES</span></a>
+    <a href="courses.html" class="nav-item"><i data-lucide="book-open"></i><span>COURSES</span></a>
+    <a href="more.html" class="nav-item"><i data-lucide="layout-grid"></i><span>MORE</span></a>
+  </nav>
+</div>
+</div>
+
+<script src="https://unpkg.com/lucide@latest"></script>
+<script src="script.js"></script>
+</body>
+</html>

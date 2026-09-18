@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>(function(){try{var t=localStorage.getItem("uniflow-theme");if(!t){t=(window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light";}document.documentElement.setAttribute("data-theme",t);}catch(e){}})();</script>
+<title>UniFlow — Database Systems</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="frame">
+  <header class="sub-header">
+    <a href="home.html" class="icon-btn" style="text-decoration:none;"><i data-lucide="chevron-left" style="width:18px;height:18px;"></i></a>
+    <div class="flex-1 min-w-0">
+      <h1 class="truncate">Database Systems</h1>
+      <p class="subtitle truncate">CSE 301 · 3 Credits · Dr. Rahman</p>
+    </div>
+    <button class="icon-btn"><i data-lucide="more-horizontal" style="width:18px;height:18px;"></i></button>
+  </header>
+
+  <main class="sub-main fade-up">
+    <div class="flex flex-col gap-6">
+
+      <div class="card flex flex-col items-center" style="padding:2rem 0;">
+        <div class="relative flex items-center justify-center" style="width:168px; height:168px;">
+          <svg width="168" height="168" style="transform:rotate(-90deg);">
+            <circle cx="84" cy="84" r="78" fill="none" stroke="var(--surface-2)" stroke-width="12"/>
+            <circle cx="84" cy="84" r="78" fill="none" stroke="url(#ringGrad)" stroke-width="12" stroke-linecap="round"
+              stroke-dasharray="490" stroke-dashoffset="63.7"/>
+            <defs><linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#FFB061"/><stop offset="100%" stop-color="#E8590C"/></linearGradient></defs>
+          </svg>
+          <div class="absolute flex flex-col items-center">
+            <span class="text-foreground" style="font-size:44px; font-weight:700; letter-spacing:-0.03em; line-height:1;">87%</span>
+            <span class="font-mono text-muted mt-1-5" style="font-size:0.58rem; letter-spacing:0.16em;">ATTENDANCE</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card seg-tabs" data-tabs="cd">
+        <button class="seg-tab active" data-tab>Overview</button>
+        <button class="seg-tab" data-tab>Materials</button>
+        <button class="seg-tab" data-tab>Assignments</button>
+        <button class="seg-tab" data-tab>Grades</button>
+      </div>
+
+      <div data-tabpanel="cd" class="flex flex-col gap-6">
+        <div>
+          <p class="label">Up Next</p>
+          <div class="card accent-left flex items-center gap-3" style="padding:1rem;">
+            <div class="icon-chip flex items-center justify-center flex-shrink-0" style="width:40px;height:40px;border-radius:12px;"><i data-lucide="clipboard-list" style="width:17px;height:17px;color:#fff;"></i></div>
+            <div class="flex-1 min-w-0">
+              <p style="font-size:0.9rem; font-weight:600;">Assignment #02</p>
+              <p class="font-mono text-warning mt-0-5" style="font-size:0.62rem; letter-spacing:0.1em;">DUE TOMORROW · 11:59 PM</p>
+            </div>
+            <i data-lucide="chevron-right" class="text-muted flex-shrink-0" style="width:16px;height:16px;"></i>
+          </div>
+        </div>
+
+        <div>
+          <div class="flex items-center justify-between mb-2-5">
+            <p class="label" style="margin:0;">Materials</p>
+            <a href="materials.html" class="text-primary" style="text-decoration:none; font-size:0.72rem; font-weight:500;">View all</a>
+          </div>
+          <div class="card" style="overflow:hidden;">
+            <a href="materials.html" class="row-link flex items-center gap-3 border-b" style="padding:0.875rem 1rem; text-decoration:none;">
+              <div class="row-icon" style="width:36px;height:36px; border-radius:8px;"><i data-lucide="file-text" style="width:15px;height:15px;"></i></div>
+              <div class="flex-1 min-w-0"><p class="truncate" style="font-size:0.85rem; font-weight:500;">Lecture 01 — Introduction</p><p class="font-mono text-muted mt-0-5" style="font-size:0.6rem;">PDF · 2.4 MB</p></div>
+              <i data-lucide="chevron-right" class="text-muted flex-shrink-0" style="width:15px;height:15px;"></i>
+            </a>
+            <a href="materials.html" class="row-link flex items-center gap-3 border-b" style="padding:0.875rem 1rem; text-decoration:none;">
+              <div class="row-icon" style="width:36px;height:36px; border-radius:8px;"><i data-lucide="file-text" style="width:15px;height:15px;"></i></div>
+              <div class="flex-1 min-w-0"><p class="truncate" style="font-size:0.85rem; font-weight:500;">Lecture 02 — ER Model</p><p class="font-mono text-muted mt-0-5" style="font-size:0.6rem;">PDF · 1.8 MB</p></div>
+              <i data-lucide="chevron-right" class="text-muted flex-shrink-0" style="width:15px;height:15px;"></i>
+            </a>
+            <a href="materials.html" class="row-link flex items-center gap-3 border-b" style="padding:0.875rem 1rem; text-decoration:none;">
+              <div class="row-icon" style="width:36px;height:36px; border-radius:8px;"><i data-lucide="video" style="width:15px;height:15px;"></i></div>
+              <div class="flex-1 min-w-0"><p class="truncate" style="font-size:0.85rem; font-weight:500;">Database Systems Video</p><p class="font-mono text-muted mt-0-5" style="font-size:0.6rem;">Video · 42 min</p></div>
+              <i data-lucide="chevron-right" class="text-muted flex-shrink-0" style="width:15px;height:15px;"></i>
+            </a>
+            <a href="materials.html" class="row-link flex items-center gap-3" style="padding:0.875rem 1rem; text-decoration:none;">
+              <div class="row-icon" style="width:36px;height:36px; border-radius:8px;"><i data-lucide="link-2" style="width:15px;height:15px;"></i></div>
+              <div class="flex-1 min-w-0"><p class="truncate" style="font-size:0.85rem; font-weight:500;">Reference Links</p><p class="font-mono text-muted mt-0-5" style="font-size:0.6rem;">Link</p></div>
+              <i data-lucide="chevron-right" class="text-muted flex-shrink-0" style="width:15px;height:15px;"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div data-tabpanel="cd" style="display:none;" class="text-center text-muted" style="font-size:0.875rem; padding:2rem 0;">
+        Open <a href="materials.html" class="text-primary">Materials</a> to browse all course files.
+      </div>
+      <div data-tabpanel="cd" style="display:none;" class="text-center text-muted" style="font-size:0.875rem; padding:2rem 0;">
+        Open <a href="assignments.html" class="text-primary">Assignments</a> to see this course's tasks.
+      </div>
+      <div data-tabpanel="cd" style="display:none;" class="card" style="padding:2rem; text-align:center;">
+        <span class="text-primary" style="font-size:2rem; font-weight:700;">A−</span>
+        <p class="text-muted mt-1" style="font-size:0.85rem;">Current grade</p>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script src="https://unpkg.com/lucide@latest"></script>
+<script src="script.js"></script>
+</body>
+</html>

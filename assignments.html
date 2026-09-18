@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>(function(){try{var t=localStorage.getItem("uniflow-theme");if(!t){t=(window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light";}document.documentElement.setAttribute("data-theme",t);}catch(e){}})();</script>
+<title>UniFlow — Assignments</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="frame">
+  <header class="sub-header">
+    <a href="more.html" class="icon-btn" style="text-decoration:none;"><i data-lucide="chevron-left" style="width:18px;height:18px;"></i></a>
+    <div class="flex-1 min-w-0"><h1 class="truncate">Assignments</h1></div>
+  </header>
+
+  <main class="sub-main fade-up">
+    <div class="flex flex-col gap-5">
+      <div class="card seg-tabs" data-tabs="asg">
+        <button class="seg-tab active" data-tab>Upcoming</button>
+        <button class="seg-tab" data-tab>Completed</button>
+      </div>
+
+      <div data-tabpanel="asg" class="flex flex-col gap-3">
+        <a href="assignment-details.html" class="card card-link flex items-center gap-3-5" style="padding:1rem; text-decoration:none;">
+          <div class="icon-chip flex items-center justify-center flex-shrink-0" style="width:44px;height:44px;border-radius:12px;"><i data-lucide="clipboard-list" style="width:18px;height:18px;color:#fff;"></i></div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center justify-between gap-2 mb-1"><p class="truncate" style="font-size:0.9rem; font-weight:600;">Database Assignment #02</p><span class="badge badge-high flex-shrink-0">HIGH</span></div>
+            <p class="text-muted truncate" style="font-size:0.75rem;">Database Systems</p>
+            <p class="font-mono text-warning mt-1" style="font-size:0.6rem; letter-spacing:0.08em;">DUE TOMORROW · 11:59 PM</p>
+          </div>
+        </a>
+        <a href="assignment-details.html" class="card card-link flex items-center gap-3-5" style="padding:1rem; text-decoration:none;">
+          <div class="icon-chip flex items-center justify-center flex-shrink-0" style="width:44px;height:44px;border-radius:12px;"><i data-lucide="clipboard-list" style="width:18px;height:18px;color:#fff;"></i></div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center justify-between gap-2 mb-1"><p class="truncate" style="font-size:0.9rem; font-weight:600;">Software Engineering Project</p><span class="badge badge-medium flex-shrink-0">MEDIUM</span></div>
+            <p class="text-muted truncate" style="font-size:0.75rem;">Software Engineering</p>
+            <p class="font-mono text-warning mt-1" style="font-size:0.6rem; letter-spacing:0.08em;">DUE IN 4 DAYS</p>
+          </div>
+        </a>
+        <a href="assignment-details.html" class="card card-link flex items-center gap-3-5" style="padding:1rem; text-decoration:none;">
+          <div class="icon-chip flex items-center justify-center flex-shrink-0" style="width:44px;height:44px;border-radius:12px;"><i data-lucide="clipboard-list" style="width:18px;height:18px;color:#fff;"></i></div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center justify-between gap-2 mb-1"><p class="truncate" style="font-size:0.9rem; font-weight:600;">Physics Lab Report</p><span class="badge badge-low flex-shrink-0">LOW</span></div>
+            <p class="text-muted truncate" style="font-size:0.75rem;">Physics</p>
+            <p class="font-mono text-warning mt-1" style="font-size:0.6rem; letter-spacing:0.08em;">DUE IN 7 DAYS</p>
+          </div>
+        </a>
+      </div>
+
+      <div data-tabpanel="asg" style="display:none;" class="flex flex-col gap-3">
+        <div class="card flex items-center gap-3-5" style="padding:1rem;">
+          <div class="flex items-center justify-center flex-shrink-0" style="width:44px;height:44px;border-radius:12px; background:var(--success-subtle);"><i data-lucide="check-circle-2" class="text-success" style="width:18px;height:18px;"></i></div>
+          <div class="flex-1 min-w-0">
+            <p class="truncate" style="font-size:0.9rem; font-weight:600;">Math Problem Set #05</p>
+            <p class="text-muted truncate" style="font-size:0.75rem;">Mathematics</p>
+            <p class="font-mono text-muted mt-1" style="font-size:0.6rem; letter-spacing:0.08em;">SUBMITTED · SEP 2</p>
+          </div>
+          <span class="text-success flex-shrink-0" style="font-size:1.1rem; font-weight:700;">A</span>
+        </div>
+        <div class="card flex items-center gap-3-5" style="padding:1rem;">
+          <div class="flex items-center justify-center flex-shrink-0" style="width:44px;height:44px;border-radius:12px; background:var(--success-subtle);"><i data-lucide="check-circle-2" class="text-success" style="width:18px;height:18px;"></i></div>
+          <div class="flex-1 min-w-0">
+            <p class="truncate" style="font-size:0.9rem; font-weight:600;">Networks Quiz #01</p>
+            <p class="text-muted truncate" style="font-size:0.75rem;">Computer Networks</p>
+            <p class="font-mono text-muted mt-1" style="font-size:0.6rem; letter-spacing:0.08em;">SUBMITTED · AUG 28</p>
+          </div>
+          <span class="text-success flex-shrink-0" style="font-size:1.1rem; font-weight:700;">A−</span>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script src="https://unpkg.com/lucide@latest"></script>
+<script src="script.js"></script>
+</body>
+</html>

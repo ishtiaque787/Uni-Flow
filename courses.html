@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>(function(){try{var t=localStorage.getItem("uniflow-theme");if(!t){t=(window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light";}document.documentElement.setAttribute("data-theme",t);}catch(e){}})();</script>
+<title>UniFlow — My Courses</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="frame">
+<main class="main-scroll">
+<div class="screen-pad">
+
+  <div class="fade-up">
+    <p class="font-mono text-muted mb-1" style="font-size:0.58rem; letter-spacing:0.2em;">ENROLLED</p>
+    <h1 class="text-foreground mb-5" style="font-size:1.5rem; font-weight:600; letter-spacing:-0.025em;">My Courses</h1>
+    <div class="search-box">
+      <i data-lucide="search"></i>
+      <input type="text" id="courseSearch" data-search="#courseList" placeholder="Search by name or code…">
+    </div>
+  </div>
+
+  <div class="card grid grid-3 fade-up fade-up-1" style="overflow:hidden;">
+    <div class="stat-block border-r"><span class="stat-value">5</span><span class="stat-label">Courses</span></div>
+    <div class="stat-block border-r"><span class="stat-value">15</span><span class="stat-label">Credits</span></div>
+    <div class="stat-block"><span class="stat-value">3.7</span><span class="stat-label">Avg GPA</span></div>
+  </div>
+
+  <div class="card fade-up fade-up-2" id="courseList" style="overflow:hidden;">
+    <a href="course-details.html" data-search-text="Database Systems CSE 301" class="card-link row-link" style="display:block; padding:1rem 1.25rem; border-bottom:1px solid var(--border); text-decoration:none;">
+      <div class="flex items-start justify-between mb-2-5">
+        <div class="flex items-start gap-3 flex-1 min-w-0">
+          <div class="icon-chip flex items-center justify-center flex-shrink-0" style="width:36px;height:36px;border-radius:12px; margin-top:2px;"><i data-lucide="database" style="width:16px;height:16px;color:#fff;"></i></div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center gap-2 mb-1"><span class="font-mono text-muted" style="font-size:0.6rem; letter-spacing:0.08em;">CSE 301</span><span class="text-muted">·</span><span class="font-mono text-muted" style="font-size:0.6rem;">3 CR</span></div>
+            <p class="text-foreground" style="font-size:0.875rem; font-weight:500; letter-spacing:-0.01em;">Database Systems</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-1 flex-shrink-0">
+          <span class="text-primary" style="font-size:1.05rem; font-weight:600; letter-spacing:-0.015em;">A−</span>
+          <i data-lucide="chevron-right" class="text-muted" style="width:14px;height:14px;"></i>
+        </div>
+      </div>
+      <div class="flex items-center gap-3">
+        <div class="progress-track flex-1"><div class="progress-fill bar-primary" style="width:68%;"></div></div>
+        <span class="font-mono text-muted flex-shrink-0" style="font-size:0.6rem;">68%</span>
+      </div>
+    </a>
+
+    <a href="course-details.html" data-search-text="Software Engineering CSE 302" class="card-link row-link" style="display:block; padding:1rem 1.25rem; border-bottom:1px solid var(--border); text-decoration:none;">
+      <div class="flex items-start justify-between mb-2-5">
+        <div class="flex items-start gap-3 flex-1 min-w-0">
+          <div class="icon-chip flex items-center justify-center flex-shrink-0" style="width:36px;height:36px;border-radius:12px; margin-top:2px;"><i data-lucide="code-2" style="width:16px;height:16px;color:#fff;"></i></div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center gap-2 mb-1"><span class="font-mono text-muted" style="font-size:0.6rem; letter-spacing:0.08em;">CSE 302</span><span class="text-muted">·</span><span class="font-mono text-muted" style="font-size:0.6rem;">3 CR</span></div>
+            <p class="text-foreground" style="font-size:0.875rem; font-weight:500; letter-spacing:-0.01em;">Software Engineering</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-1 flex-shrink-0">
+          <span class="text-primary" style="font-size:1.05rem; font-weight:600; letter-spacing:-0.015em;">B+</span>
+          <i data-lucide="chevron-right" class="text-muted" style="width:14px;height:14px;"></i>
+        </div>
+      </div>
+      <div class="flex items-center gap-3">
+        <div class="progress-track flex-1"><div class="progress-fill bar-primary" style="width:52%;"></div></div>
+        <span class="font-mono text-muted flex-shrink-0" style="font-size:0.6rem;">52%</span>
+      </div>
+    </a>
+
+    <a href="course-details.html" data-search-text="Mathematics MAT 201" class="card-link row-link" style="display:block; padding:1rem 1.25rem; border-bottom:1px solid var(--border); text-decoration:none;">
+      <div class="flex items-start justify-between mb-2-5">
+        <div class="flex items-start gap-3 flex-1 min-w-0">
+          <div class="icon-chip flex items-center justify-center flex-shrink-0" style="width:36px;height:36px;border-radius:12px; margin-top:2px;"><i data-lucide="sigma" style="width:16px;height:16px;color:#fff;"></i></div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center gap-2 mb-1"><span class="font-mono text-muted" style="font-size:0.6rem; letter-spacing:0.08em;">MAT 201</span><span class="text-muted">·</span><span class="font-mono text-muted" style="font-size:0.6rem;">3 CR</span></div>
+            <p class="text-foreground" style="font-size:0.875rem; font-weight:500; letter-spacing:-0.01em;">Mathematics</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-1 flex-shrink-0">
+          <span class="text-primary" style="font-size:1.05rem; font-weight:600; letter-spacing:-0.015em;">A</span>
+          <i data-lucide="chevron-right" class="text-muted" style="width:14px;height:14px;"></i>
+        </div>
+      </div>
+      <div class="flex items-center gap-3">
+        <div class="progress-track flex-1"><div class="progress-fill bar-primary" style="width:80%;"></div></div>
+        <span class="font-mono text-muted flex-shrink-0" style="font-size:0.6rem;">80%</span>
+      </div>
+    </a>
+
+    <a href="course-details.html" data-search-text="Computer Networks CSE 303" class="card-link row-link" style="display:block; padding:1rem 1.25rem; border-bottom:1px solid var(--border); text-decoration:none;">
+      <div class="flex items-start justify-between mb-2-5">
+        <div class="flex items-start gap-3 flex-1 min-w-0">
+          <div class="icon-chip flex items-center justify-center flex-shrink-0" style="width:36px;height:36px;border-radius:12px; margin-top:2px;"><i data-lucide="network" style="width:16px;height:16px;color:#fff;"></i></div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center gap-2 mb-1"><span class="font-mono text-muted" style="font-size:0.6rem; letter-spacing:0.08em;">CSE 303</span><span class="text-muted">·</span><span class="font-mono text-muted" style="font-size:0.6rem;">3 CR</span></div>
+            <p class="text-foreground" style="font-size:0.875rem; font-weight:500; letter-spacing:-0.01em;">Computer Networks</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-1 flex-shrink-0">
+          <span class="text-primary" style="font-size:1.05rem; font-weight:600; letter-spacing:-0.015em;">B</span>
+          <i data-lucide="chevron-right" class="text-muted" style="width:14px;height:14px;"></i>
+        </div>
+      </div>
+      <div class="flex items-center gap-3">
+        <div class="progress-track flex-1"><div class="progress-fill bar-primary" style="width:40%;"></div></div>
+        <span class="font-mono text-muted flex-shrink-0" style="font-size:0.6rem;">40%</span>
+      </div>
+    </a>
+
+    <a href="course-details.html" data-search-text="Operating Systems CSE 304" class="card-link row-link" style="display:block; padding:1rem 1.25rem; text-decoration:none;">
+      <div class="flex items-start justify-between mb-2-5">
+        <div class="flex items-start gap-3 flex-1 min-w-0">
+          <div class="icon-chip flex items-center justify-center flex-shrink-0" style="width:36px;height:36px;border-radius:12px; margin-top:2px;"><i data-lucide="cpu" style="width:16px;height:16px;color:#fff;"></i></div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center gap-2 mb-1"><span class="font-mono text-muted" style="font-size:0.6rem; letter-spacing:0.08em;">CSE 304</span><span class="text-muted">·</span><span class="font-mono text-muted" style="font-size:0.6rem;">3 CR</span></div>
+            <p class="text-foreground" style="font-size:0.875rem; font-weight:500; letter-spacing:-0.01em;">Operating Systems</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-1 flex-shrink-0">
+          <span class="text-primary" style="font-size:1.05rem; font-weight:600; letter-spacing:-0.015em;">A−</span>
+          <i data-lucide="chevron-right" class="text-muted" style="width:14px;height:14px;"></i>
+        </div>
+      </div>
+      <div class="flex items-center gap-3">
+        <div class="progress-track flex-1"><div class="progress-fill bar-primary" style="width:74%;"></div></div>
+        <span class="font-mono text-muted flex-shrink-0" style="font-size:0.6rem;">74%</span>
+      </div>
+    </a>
+  </div>
+
+</div>
+</main>
+
+<div class="bottom-nav-wrap">
+  <nav class="card bottom-nav">
+    <a href="home.html" class="nav-item"><i data-lucide="home"></i><span>HOME</span></a>
+    <a href="timetable.html" class="nav-item"><i data-lucide="calendar-days"></i><span>CLASSES</span></a>
+    <a href="courses.html" class="nav-item active"><i data-lucide="book-open"></i><span>COURSES</span></a>
+    <a href="more.html" class="nav-item"><i data-lucide="layout-grid"></i><span>MORE</span></a>
+  </nav>
+</div>
+</div>
+
+<script src="https://unpkg.com/lucide@latest"></script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>(function(){try{var t=localStorage.getItem("uniflow-theme");if(!t){t=(window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light";}document.documentElement.setAttribute("data-theme",t);}catch(e){}})();</script>
+<title>UniFlow — Notifications</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="frame">
+  <header class="sub-header">
+    <a href="home.html" class="icon-btn" style="text-decoration:none;"><i data-lucide="chevron-left" style="width:18px;height:18px;"></i></a>
+    <div class="flex-1 min-w-0"><h1 class="truncate">Notifications</h1></div>
+    <button class="text-primary flex-shrink-0" style="background:none; border:none; font-size:0.78rem; font-weight:500;">Mark all</button>
+  </header>
+
+  <main class="sub-main fade-up">
+    <p class="label">Today</p>
+    <div class="card" style="overflow:hidden;">
+      <div class="flex items-center gap-3-5 relative border-b" style="padding:1rem; background:color-mix(in srgb, var(--primary-subtle) 40%, transparent);">
+        <div class="flex items-center justify-center flex-shrink-0" style="width:40px;height:40px;border-radius:12px; background:var(--primary-subtle);"><i data-lucide="clock" class="text-primary-strong" style="width:16px;height:16px;"></i></div>
+        <div class="flex-1 min-w-0"><p class="truncate" style="font-size:0.875rem; font-weight:600;">Class starts in 30 minutes</p><p class="text-muted truncate mt-0-5" style="font-size:0.75rem;">Database Systems · Room 304</p></div>
+        <span class="font-mono text-muted flex-shrink-0" style="font-size:0.6rem; letter-spacing:0.06em;">15m</span>
+        <span class="absolute" style="top:1rem; right:0.75rem; width:6px;height:6px;border-radius:999px;background:var(--primary);"></span>
+      </div>
+      <div class="flex items-center gap-3-5 relative border-b" style="padding:1rem; background:color-mix(in srgb, var(--primary-subtle) 40%, transparent);">
+        <div class="flex items-center justify-center flex-shrink-0" style="width:40px;height:40px;border-radius:12px; background:var(--primary-subtle);"><i data-lucide="clipboard-list" class="text-primary-strong" style="width:16px;height:16px;"></i></div>
+        <div class="flex-1 min-w-0"><p class="truncate" style="font-size:0.875rem; font-weight:600;">Assignment due tomorrow</p><p class="text-muted truncate mt-0-5" style="font-size:0.75rem;">Database Assignment #02</p></div>
+        <span class="font-mono text-muted flex-shrink-0" style="font-size:0.6rem; letter-spacing:0.06em;">1h</span>
+        <span class="absolute" style="top:1rem; right:0.75rem; width:6px;height:6px;border-radius:999px;background:var(--primary);"></span>
+      </div>
+      <div class="flex items-center gap-3-5 border-b" style="padding:1rem;">
+        <div class="flex items-center justify-center flex-shrink-0" style="width:40px;height:40px;border-radius:12px; background:var(--primary-subtle);"><i data-lucide="file-text" class="text-primary-strong" style="width:16px;height:16px;"></i></div>
+        <div class="flex-1 min-w-0"><p class="truncate" style="font-size:0.875rem; font-weight:500;">New material uploaded</p><p class="text-muted truncate mt-0-5" style="font-size:0.75rem;">Software Engineering</p></div>
+        <span class="font-mono text-muted flex-shrink-0" style="font-size:0.6rem; letter-spacing:0.06em;">3h</span>
+      </div>
+      <div class="flex items-center gap-3-5 border-b" style="padding:1rem;">
+        <div class="flex items-center justify-center flex-shrink-0" style="width:40px;height:40px;border-radius:12px; background:var(--primary-subtle);"><i data-lucide="graduation-cap" class="text-primary-strong" style="width:16px;height:16px;"></i></div>
+        <div class="flex-1 min-w-0"><p class="truncate" style="font-size:0.875rem; font-weight:500;">Exam schedule updated</p><p class="text-muted truncate mt-0-5" style="font-size:0.75rem;">Mathematics</p></div>
+        <span class="font-mono text-muted flex-shrink-0" style="font-size:0.6rem; letter-spacing:0.06em;">5h</span>
+      </div>
+      <div class="flex items-center gap-3-5" style="padding:1rem;">
+        <div class="flex items-center justify-center flex-shrink-0" style="width:40px;height:40px;border-radius:12px; background:var(--error-subtle);"><i data-lucide="alert-triangle" class="text-error" style="width:16px;height:16px;"></i></div>
+        <div class="flex-1 min-w-0"><p class="truncate" style="font-size:0.875rem; font-weight:500;">Attendance below 75%</p><p class="text-muted truncate mt-0-5" style="font-size:0.75rem;">Physics</p></div>
+        <span class="font-mono text-muted flex-shrink-0" style="font-size:0.6rem; letter-spacing:0.06em;">6h</span>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script src="https://unpkg.com/lucide@latest"></script>
+<script src="script.js"></script>
+</body>
+</html>
